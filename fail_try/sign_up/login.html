@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Sign up </title>
+    <link rel="stylesheet" href="sign.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.jpg" type="image">
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="title">Join Us/Volunteer</div>
+    <div class="content">
+        <form method="GET">
+            <div class="user-details">
+                <div class="input-box">
+                    <label for="eml" class="details">Email</label>
+                    <input type="email" id="eml" name="eml" placeholder="Please enter your email" required>
+                </div>
+                <div class="input-box">
+                    <label for="pass" class="details">Password</label>
+                    <input type="password" id="pass" name="pass"  placeholder="Please enter the password" required>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" onclick="login()" class="bttn" value="Log in">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="db.js"></script>
+</body>
+</html>
